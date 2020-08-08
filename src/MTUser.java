@@ -21,3 +21,19 @@ class PrintNum extends Thread {
     }
 }
 
+class PrintChar implements Runnable {
+    private char letter;
+    private int times;
+
+    @Override
+    public void run(){
+        for (int i = 0; i < times; i++){
+            System.out.println(letter);
+        }
+    }
+
+    public PrintChar(char letter1, int times1){
+        letter = letter1;
+        times = times1;
+    }
+}
