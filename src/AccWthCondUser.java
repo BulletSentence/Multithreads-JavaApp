@@ -12,6 +12,19 @@ public class AccWthCondUser {
         }
     }
 
+    public static class DepositTask implements Runnable {
+        public void run(){
+            try {
+                while(true) {
+
+                }
+            }
+            catch (InterruptedException ex) {
+                ex.printStackTrace();
+            }
+        }
+    }
+
     public static class WithdrawTask implements Runnable {
         public void run() {
             while (true) {
