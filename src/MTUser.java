@@ -15,6 +15,9 @@ class PrintNum extends Thread {
         }
     }
 
-    
-
+    public PrintNum(int num1, int times1){
+        num = num1;
+        times = times1;
+    }
 }
+
