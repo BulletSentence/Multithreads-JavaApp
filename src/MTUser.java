@@ -4,6 +4,13 @@ public class MTUser {
     public static void main(String[] args) {
         Runnable printfirst = new PrintChar('a', 200);
         Runnable printSecond = new PrintNum(2,50);
+
+        // Threads
+        Thread t1 = new Thread(printfirst);
+        Thread t2 = new Thread(printSecond);
+
+        //Start Method
+
     }
 }
 
