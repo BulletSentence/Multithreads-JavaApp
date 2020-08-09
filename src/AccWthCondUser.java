@@ -13,14 +13,19 @@ public class AccWthCondUser {
         executor.shutdown();
 
         while (!executor.isShutdown()){
-        
+
         }
     }
 
     public static class DepositTask implements Runnable {
         public void run(){
             while(true) {
-
+                account.deposit((int)(Math.random() * 10) + 1);
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
         }
     }
