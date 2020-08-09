@@ -1,5 +1,8 @@
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class AccWthCondUser {
     private static Account account = new Account();
@@ -39,13 +42,26 @@ public class AccWthCondUser {
     }
 
     private static class Account {
+        private static Lock lock = new ReentrantLock(true);
+        private static Condition newDeposit = lock.newCondition();
+
         private int balance = 0;
         public int getBalance(){
             return balance;
         }
 
         public void withdraw(int amount){
-
+            lock.lock();
+            try {
+                while (balance < amount) {
+                    System.out.println("\t\t\tWait for Deposit");
+                    newDeposit.await();
+                }
+                balance -= amount;
+                System.out.println("\t\t\tWithdraw Completed (" + amount + ")R$");
+            } catch (InterruptedException e){
+                e.printStackTrace();
+            }
         }
 
         public void deposit(int amount){
