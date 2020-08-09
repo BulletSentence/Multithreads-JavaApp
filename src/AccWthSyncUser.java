@@ -22,12 +22,12 @@ public class AccWthSyncUser {
                 userAccount.deposit(1);
             }
         }
-    }
 
     private static class Account {
         // Thread will wait for priority
         private static Lock lock = new ReentrantLock(true);
         private int balance = 0;
+
         public int getBalanc() {
             return balance;
         }
@@ -37,9 +37,9 @@ public class AccWthSyncUser {
             try {
                 int newBalance = balance + amount;
                 balance = newBalance;
-        } finally {
+            } finally {
                 lock.unlock();
             }
+        }
     }
-
-}
+    }
