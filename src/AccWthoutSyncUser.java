@@ -18,6 +18,7 @@ public class AccWthoutSyncUser {
         while (!executor.isShutdown()){
 
         }
+        // This will generate a random number because the Thread sleeps
         System.out.println("What is balance? " + userAccount.getBalance());
     }
 
@@ -35,7 +36,7 @@ public class AccWthoutSyncUser {
             try {
                 Thread.sleep(1);
             } catch (InterruptedException ex) {
-                
+
             }
             balance = newBalance;
         }
