@@ -54,7 +54,7 @@ public class AccWthCondUser {
             lock.lock();
             try {
                 while (balance < amount) {
-                    System.out.println("\t\t\tWait for Deposit");
+                    System.out.println("\t\t\t\tWaiting");
                     newDeposit.await();
                 }
                 balance -= amount;
@@ -68,7 +68,15 @@ public class AccWthCondUser {
         }
 
         public void deposit(int amount){
-
+            lock.lock();
+            try {
+                balance = balance + amount;
+                System.out.println("Deposited: " + amount + "\t\t\t\t\t" + getBalance());
+                newDeposit.signalAll();
+            }
+            finally {
+                lock.unlock();
+            }
         }
     }
 

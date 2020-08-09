@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcc7e9d7-36ee-4bc1-89a0-d42ddeec5179" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AccWthCondUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AccWthCondUser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +36,14 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="Application.AccWthSyncUser">
+  <component name="RunManager" selected="Application.AccWthCondUser">
+    <configuration name="AccWthCondUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AccWthCondUser" />
+      <module name="Multithreads-JavaApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AccWthSyncUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AccWthSyncUser" />
       <module name="Multithreads-JavaApp" />
@@ -59,6 +67,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AccWthCondUser" />
         <item itemvalue="Application.AccWthSyncUser" />
         <item itemvalue="Application.AccWthoutSyncUser" />
         <item itemvalue="Application.MTUser" />
@@ -88,7 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1596911750711</updated>
       <workItem from="1596911752414" duration="2831000" />
-      <workItem from="1597003924363" duration="4151000" />
+      <workItem from="1597003924363" duration="4409000" />
     </task>
     <servers />
   </component>
@@ -100,21 +109,21 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="275" y="43" key="#Project_Structure/0.0.1366.768@0.0.1366.768" timestamp="1596911782559" />
-    <state width="1323" height="172" key="GridCell.Tab.0.bottom" timestamp="1597008603993">
+    <state width="1323" height="172" key="GridCell.Tab.0.bottom" timestamp="1597010232851">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="172" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1597008603993" />
-    <state width="1323" height="172" key="GridCell.Tab.0.center" timestamp="1597008603993">
+    <state width="1323" height="172" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1597010232851" />
+    <state width="1323" height="172" key="GridCell.Tab.0.center" timestamp="1597010232851">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="172" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1597008603993" />
-    <state width="1323" height="172" key="GridCell.Tab.0.left" timestamp="1597008603993">
+    <state width="1323" height="172" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1597010232851" />
+    <state width="1323" height="172" key="GridCell.Tab.0.left" timestamp="1597010232851">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="172" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1597008603993" />
-    <state width="1323" height="172" key="GridCell.Tab.0.right" timestamp="1597008603993">
+    <state width="1323" height="172" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1597010232851" />
+    <state width="1323" height="172" key="GridCell.Tab.0.right" timestamp="1597010232851">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="172" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1597008603993" />
+    <state width="1323" height="172" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1597010232851" />
   </component>
 </project>
