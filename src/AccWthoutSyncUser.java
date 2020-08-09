@@ -5,9 +5,9 @@ public class AccWthoutSyncUser {
         for (int i = 0; i < 100; i++){
 
         }
-        while (!executor.isShutdown()){
+        //while (!executor.isShutdown()){
 
-        }
+        //}
         System.out.println("What is balance? " + userAccount.getBalance());
     }
 
