@@ -7,8 +7,13 @@ public class AccWthCondUser {
         System.out.println("Thread One \t\t Tread Two \t\t Balance");
         ExecutorService executor = Executors.newFixedThreadPool(2);
 
-        while (!executor.isShutdown()){
+        // This Withdraw task only run when it have money
+        executor.execute(new DepositTask());
+        executor.execute(new WithdrawTask());
+        executor.shutdown();
 
+        while (!executor.isShutdown()){
+        
         }
     }
 
