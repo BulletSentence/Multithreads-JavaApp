@@ -32,7 +32,11 @@ public class AccWthoutSyncUser {
 
         public void deposit(int amount) {
             int newBalance = balance + amount;
-            
+            try {
+                Thread.sleep(1);
+            } catch (InterruptedException ex) {
+                
+            }
             balance = newBalance;
         }
 
