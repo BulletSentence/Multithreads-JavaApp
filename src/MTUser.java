@@ -10,6 +10,8 @@ public class MTUser {
         Thread t2 = new Thread(printSecond);
 
         //Start Method
+        t1.start();
+        t2.start();
 
     }
 }
