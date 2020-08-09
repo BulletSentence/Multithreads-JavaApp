@@ -62,6 +62,9 @@ public class AccWthCondUser {
             } catch (InterruptedException e){
                 e.printStackTrace();
             }
+            finally {
+                lock.unlock();
+            }
         }
 
         public void deposit(int amount){
